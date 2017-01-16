@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="preloader animsition">
+<div class="preloader animsition"> 
 <header class="header">
 	<!--------------- Header Top ---------------->
 	<section class="header-top padding-top-10 padding-bottom-10 text-center-xs">
