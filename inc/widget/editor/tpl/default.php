@@ -1,4 +1,4 @@
-<div class="themetim-editor <?php echo $instance['heading_alignment']; ?>">
+ <div class="themetim-editor <?php echo $instance['heading_alignment']; ?>">
 	<?php if ( ! empty( $instance['icon'] ) ) :
 		?><div class="margin-bottom-30"><?php
 		$icon_styles = array();
@@ -8,12 +8,13 @@
 		?></div><?php
 	endif; ?>
 	<div class="<?php echo $instance['heading_alignment']; ?>-heading margin-bottom-30">
-		<?php if ( ! empty( $instance['sub_title'] ) ) : ?>
-			<h1 class="widget-sub-heading margin-bottom-30 margin-top-10"><?php echo esc_html( $instance['sub_title'] ); ?></h1>
-		<?php endif; ?>
+
 		<?php if ( ! empty( $instance['title'] ) ) : ?>
 			<h1 class="page-header"><?php echo esc_html( $instance['title'] ); ?></h1>
 		<?php endif; ?>
+        <?php if ( ! empty( $instance['sub_title'] ) ) : ?>
+            <p class="widget-sub-heading margin-bottom-30 margin-top-30"><?php echo esc_html( $instance['sub_title'] ); ?></p>
+        <?php endif; ?>
 	</div>
 	<?php if ( ! empty( $instance['texteditor'] ) ) : ?>
 		<div class="services-details"><?php echo  $instance['texteditor']; ?></div>
@@ -22,3 +23,6 @@
 		<div class="default-button margin-top-30"><a href="<?php echo  sow_esc_url($instance['button_url']); ?>" class="btn <?php echo  $instance['button_style']; ?>"><?php echo  $instance['button_text']; ?></a></div>
 	<?php endif; ?>
 </div>
+
+
+

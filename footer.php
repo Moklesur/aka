@@ -17,8 +17,18 @@
 		<div class="container">
 			<div class="row">
 				<!--------------- Footer Newsletter ---------------->
-				<div class="col-md-12 col-sm-12 col-xs-12 newsletter">
-					<?php do_action('themetim_footer_newsletter');?>
+				<div class="col-md-3 col-sm-3 col-xs-6 footer-middle-text">
+					<h2>AKA</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 ">
+					<p>Imran</p>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 ">
+					<p>Imran</p>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 ">
+					<p>Imran</p>
 				</div>
 			</div>
 		</div>
@@ -28,15 +38,15 @@
 		<div class="container">
 			<div class="row">
 				<!--------------- Footer Social ---------------->
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<?php do_action('themetim_footer_social'); ?>
-				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12 site-info">
+				<div class="col-md-6 col-sm-6 col-xs-12 site-info">
 					<?php
 					if(get_theme_mod('bottom_footer_copyright_enable','1')) :
 						do_action('themetim_bottom_footer_copyright');
 					endif;
 					?>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<?php do_action('themetim_footer_social'); ?>
 				</div>
 			</div>
 		</div>

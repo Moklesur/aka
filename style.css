@@ -14,8 +14,11 @@ Tags: fully customizable, custom color, custom fonts, visual page builder, mobil
 /********************************************************
     ## Common
 ********************************************************/
+
+
 body{
 	font-weight: 400;
+	font-family:play;
 }
 a,.btn,input,button,.woocommerce .product-fix .compare,.woocommerce .product-fix .yith-wcqv-button,.woocommerce ul.products li.product .thumbs,.portfolio-url span,.portfolio-url::after{
 	-webkit-transition: all .3s ease-in-out;
@@ -33,6 +36,8 @@ a,.btn,.woocommerce ul.products li.product .button,.form-control,.woocommerce .c
 h1, h2, h3, h4, h5, h6{
 	letter-spacing: 2px;
 	font-weight: 700;
+	font-family:play;
+
 }
 a,p,.woocommerce input.button,.woocommerce-cart .cart-collaterals .cart_totals tr th,.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,.woocommerce .cart th,.woocommerce table.shop_table th,.woocommerce-Address address {
 	letter-spacing: 1px;
@@ -48,16 +53,17 @@ p,.woocommerce-Address address {
 	text-transform: uppercase;
 }
 .page-header{
-	margin:0 0 20px;
+	margin:0 0 -15px;
 	font-size: 24px;
 	border: 0;
+	padding-bottom:0px;
 }
-.text-center-heading .page-header::after,.text-left-heading .page-header::after,.page-header:after,.text-right-heading .page-header::after,.service-fix .text-center-heading .page-header::before,.service-fix .text-left-heading .page-header::before,.service-fix .text-right-heading .page-header::before{
+.text-center-heading .widget-sub-heading::after,.text-left-heading .widget-sub-heading::after,.widget-sub-heading:after,.text-right-heading .widget-sub-heading::after,.service-fix .text-center-heading .widget-sub-heading::before,.service-fix .text-left-heading .widget-sub-heading::before,.service-fix .text-right-heading .widget-sub-heading::before{
 	content: '';
 	width: 35px;
 	display:block;
 	margin: 10px auto 0;
-	border: 2px solid;
+	border: 2px solid rgb(40, 169, 0) !important;
 }
 .service-fix .service-heading .page-header::after{
 	display: none;
@@ -86,7 +92,7 @@ p,.woocommerce-Address address {
 	position: absolute;
 	right: -6px;
 	top: -7px;
-	background: #fec826;
+	background: rgb(40, 169, 0);
 }
 img {
 	max-width: 100%;
@@ -274,10 +280,16 @@ header,.sticky .header-bottom{
 .slider-wrap{
 	max-width: 950px;
 	margin:0 auto;
+	color: #fff;
+	font-size: 16px
 }
 .slider-wrap h2{
 	font-size: 60px;
 	letter-spacing: 5px;
+}
+
+.slider-wrap h3{
+	color:#fff;
 }
 .slider-wrap .btn{
 	margin-top: 30px;
@@ -323,7 +335,7 @@ header,.sticky .header-bottom{
 	padding: 15px;
 }
 .testimonial .item img{
-	max-width: 65px;
+	max-width:120px;
 }
 .brand li{
 	width: 16%;
@@ -340,7 +352,7 @@ header,.sticky .header-bottom{
 	padding-bottom: 30px;
 }
 .pricing-list li:nth-child(2n+2) span{
-	background: #fec826;
+	background: rgb(40, 169, 0);
 }
 .pricing-list li .pricing-icon{
 	display: block;
@@ -359,7 +371,7 @@ header,.sticky .header-bottom{
 .fact-list li{
 	width: 25%;
 	padding: 15px;
-	border-right: 2px solid #f5be19;
+	border-right: 2px solid rgb(40, 169, 0);
 }
 .fact-list li:nth-child(4n+4){
 	border-color: transparent;
@@ -418,6 +430,29 @@ header,.sticky .header-bottom{
 .testimonial .carousel-indicators .active{
 	background: #000;
 }
+
+.service-area .page-header:after{
+	display:none;
+}
+.service-area .page-header{
+	font-size:18px;
+}
+
+.service-area .services-details{
+	padding:0px 12px;
+}
+
+
+[role=button] {
+	cursor: pointer;
+	display: none;
+}
+
+.subheading .widget-sub-heading{
+	font-size: 18px;
+	color:#fff;
+}
+
 /********************************************************
     ## Contact Form
 ********************************************************/
@@ -434,6 +469,11 @@ header,.sticky .header-bottom{
 	padding: 2px 25px;
 	height: inherit;
 	letter-spacing: 1px;
+}
+
+form.wpcf7-form input, form.wpcf7-form textarea{
+	padding: 5px 10px;
+	margin-bottom: 15px;
 }
 /********************************************************
     ## Blog
@@ -836,7 +876,6 @@ header,.sticky .header-bottom{
 	background: transparent;
 }
 .footer-main .container{
-	max-width: 600px;
 	margin: 0 auto;
 }
 .footer-main .footer-social a{
@@ -850,6 +889,15 @@ header,.sticky .header-bottom{
 	padding-bottom: 30px;
 	border-top: 1px solid #111;
 	background: #060606;
+}
+
+.footer-middle-text{
+    text-align: left;
+    color: #fff;
+
+}
+.footer-middle-text h2{
+    color: #fff;
 }
 /********************************************************
     ## Miscellaneous
