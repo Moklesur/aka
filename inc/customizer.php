@@ -669,7 +669,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'link_color',
 		array(
-			'default'           => '#000',
+			'default'           => 'rgb(40, 169, 0)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -687,7 +687,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'link_hover_color',
 		array(
-			'default'           => '#555',
+			'default'           => 'rgb(40, 169, 0)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -826,7 +826,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_default_bg',
 		array(
-			'default'           => '#fff',
+			'default'           => 'rgb(40, 169, 0)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -845,7 +845,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_default_text',
 		array(
-			'default'           => '#000',
+			'default'           => '#fff',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -863,7 +863,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_default_border',
 		array(
-			'default'           => '#000',
+			'default'           => 'rgb(40, 169, 0)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -952,7 +952,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_primary_bg',
 		array(
-			'default'           => '#000',
+			'default'           => 'rgb(40, 169, 0)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -988,7 +988,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_primary_border',
 		array(
-			'default'           => '#000',
+			'default'           => 'rgb(40, 169, 0)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -1006,7 +1006,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_primary_bg_hover',
 		array(
-			'default'           => '#fff',
+			'default'           => '#000',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -1024,7 +1024,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_primary_text_hover',
 		array(
-			'default'           => '#000',
+			'default'           => '#fff',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -1076,7 +1076,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_success_bg',
 		array(
-			'default'           => '#000',
+			'default'           => 'rgb(40, 169, 0)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -1112,7 +1112,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_success_border',
 		array(
-			'default'           => '#000',
+			'default'           => 'rgb(40, 169, 0)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -1130,7 +1130,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_success_bg_hover',
 		array(
-			'default'           => '#fff',
+			'default'           => '#000',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -1148,7 +1148,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_success_text_hover',
 		array(
-			'default'           => '#000',
+			'default'           => '#fff',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -1166,7 +1166,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'btn_success_border_hover',
 		array(
-			'default'           => '#fff',
+			'default'           => '#000',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -1297,7 +1297,7 @@ function themetim_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'body_font_family',
 		array(
-			'default' => 'Play',
+			'default' => 'Roboto',
 			'capability'     => 'edit_theme_options'
 		)
 	);
