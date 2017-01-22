@@ -23,7 +23,41 @@
 <div class="preloader animsition">
 <header class="header">
 	<!--------------- Header Top ---------------->
-	<section class="header-top padding-top-10 padding-bottom-10 text-center-xs">
+	<section class="header-top padding-bottom-10 text-center-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="logo pull-left">
+						<?php
+						if (get_theme_mod('site_logo') != '') : ?>
+							<a href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_mod('site_logo'); ?>" class="img-responsive" alt="" /></a>
+						<?php else : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></p>
+						<?php endif ?>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<ul class="list-inline header-info margin-null text-right topheaderalign">
+						<li><i class="fa fa-map-marker"></i> 2525 Shyamoly Dhaka</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<ul class="list-inline header-info margin-null text-right topheaderalign">
+						<li><i class="fa fa-envelope"></i> pandorapark@info.com</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<ul class="list-inline header-info margin-null text-right topheaderalign">
+						<li><i class="fa fa-phone"></i> + 880 1681317564 </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="header-top padding-top-10 padding-bottom-10 text-center-xs topheaderfullbg">
 		<div class="container">
 			<div class="row">
 				<!--------------- Primary Menu ---------------->
@@ -34,15 +68,6 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-					</div>
-					<div class="logo pull-left">
-						<?php
-						if (get_theme_mod('site_logo') != '') : ?>
-							<a href="<?php echo site_url('/'); ?>"><img src="<?php echo get_theme_mod('site_logo'); ?>" class="img-responsive" alt="" /></a>
-						<?php else : ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></p>
-						<?php endif ?>
 					</div>
 					<div class="pull-right text-right search-cart">
 						<ul class="list-inline margin-null">
@@ -70,7 +95,7 @@
 							?>
 						</ul>
 					</div>
-					<div id="navbar-collapse" class="navbar-collapse collapse pull-right">
+					<div id="navbar-collapse" class="navbar-collapse collapse pull-left">
 						<?php
 						if ( has_nav_menu( 'primary' ) ) :
 							wp_nav_menu( array('menu'              => 'primary', 'theme_location'    => 'primary', 'depth'             => 5, 'container'         => '', 'menu_id' 			=> 'primary-menu', 'container_class'   => 'collapse navbar-collapse', 'container_id'      => 'bs-example-navbar-collapse-1', 'menu_class'        => 'nav navbar-nav', 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback', 'walker'            => new wp_bootstrap_navwalker()));

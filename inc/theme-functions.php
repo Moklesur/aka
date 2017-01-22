@@ -81,6 +81,70 @@ function footer_newsletter(){
 }
 add_action( 'themetim_footer_newsletter', 'footer_newsletter' );
 
+
+/**
+ * Middle Footer Description
+ */
+function middle_footer_description(){
+    ?>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <h3 class="margin-bottom-30"><?php echo get_theme_mod('middle_footer_text_heading','AKA'); ?></h3>
+        <p><?php echo get_theme_mod('middle_footer_text','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'); ?></p>
+    </div>
+    <?php
+}
+add_action( 'themetim_middle_footer_description', 'middle_footer_description' );
+
+/**
+ * Middle Footer Nav 1
+ */
+function middle_footer_nav_1(){
+    ?>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <h3 class="margin-bottom-30"><?php echo get_theme_mod('middle_footer_nav_heading_1','INFORMATION'); ?></h3>
+        <?php
+        if ( has_nav_menu( 'footer-1' ) ) :
+            wp_nav_menu( array( 'theme_location' => 'footer-1', 'menu_class' => 'list-unstyled text-capitalize', 'menu_id' => 'primary-menu','container' => '' ) );
+        else: echo '<p class="text-capitalize">Please select <a href="/wp-admin/nav-menus.php" class="text-muted">Footer Nav 1</a> </p>';
+        endif;
+        ?>
+    </div>
+    <?php
+}
+add_action( 'themetim_middle_footer_nav_1', 'middle_footer_nav_1' );
+
+/**
+ * Middle Footer Nav 2
+ */
+function middle_footer_nav_2(){
+    ?>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <h3 class="margin-bottom-30"><?php echo get_theme_mod('middle_footer_nav_heading_2','LINKS'); ?></h3>
+        <?php
+        if ( has_nav_menu( 'footer-2' ) ) :
+            wp_nav_menu( array( 'theme_location' => 'footer-2', 'menu_class' => 'list-unstyled text-capitalize', 'menu_id' => 'primary-menu','container' => '' ) );
+        else: echo '<p class="text-capitalize">Please select <a href="/wp-admin/nav-menus.php" class="text-muted">Footer Nav 2</a> </p>';
+        endif;
+        ?>
+    </div>
+    <?php
+}
+add_action( 'themetim_middle_footer_nav_2', 'middle_footer_nav_2' );
+
+
+/**
+ * Middle Footer Nav 3
+ */
+function middle_footer_nav_3(){
+    ?>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <h3 class="margin-bottom-30"><?php echo get_theme_mod('middle_footer_nav_heading_3','Blog'); ?></h3>
+    </div>
+    <?php
+}
+add_action( 'themetim_middle_footer_nav_3', 'middle_footer_nav_3' );
+
+
 /**
  * Bottom Footer Copyright
  */

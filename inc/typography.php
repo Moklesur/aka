@@ -72,9 +72,9 @@ function themetim_typography_color($color) {
 
     $color .= ".btn-primary, .btn-primary.disabled{ background-color:" . esc_attr($btn_primary_bg) . "; color: " . esc_attr($btn_primary_text) . ";border-color: " . esc_attr($btn_primary_border) . "; } ";
 
-    $btn_primary_bg_hover = get_theme_mod( 'btn_primary_bg_hover', 'rgb(40, 169, 0)' );
+    $btn_primary_bg_hover = get_theme_mod( 'btn_primary_bg_hover', '#000' );
     $btn_primary_text_hover = get_theme_mod( 'btn_primary_text_hover', '#fff' );
-    $btn_primary_border_hover = get_theme_mod( 'btn_primary_border_hover', 'rgb(40, 169, 0)' );
+    $btn_primary_border_hover = get_theme_mod( 'btn_primary_border_hover', '#000' );
 
     $color .= ".btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary{ background-color:" . esc_attr($btn_primary_bg_hover) . "; color: " . esc_attr($btn_primary_text_hover) . ";border-color: " . esc_attr($btn_primary_border_hover) . "; } ";
 
