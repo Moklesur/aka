@@ -102,23 +102,36 @@ p,.woocommerce-Address address {
 img {
 	max-width: 100%;
 }
-.breadcrumb{
-	background-color: transparent;
-	border-radius: 0;
-	font-size: 12px;
-	letter-spacing: 1px;
-	padding: 6px 0 5px 0;
+.breadcrumb {
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 6px 0 5px 0;
 }
 .breadcrumb-wrap{
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-	padding: 2px 0;
+    padding: 75px 0;
+    background: #28a900;
+    color:#fff;
+    text-align: center;
+}
+
+.breadcrumb-wrap a:hover{
+    color: #000;
 }
 .breadcrumb>li+li:before {
 	padding: 0 10px;
-	color: #000;
+	color: #fff;
 	content: "\f105";
 	font-family: FontAwesome;
+}
+
+.cat-description .page-header{
+    display: none;
+}
+
+.themetim-archive-product{
+    padding-top:35px;
 }
 .padding-null{
 	padding: 0;
@@ -817,7 +830,7 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	opacity: 1;
 }
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-	width: 33%;
+	width: 48%;
 }
 .woocommerce ul.products li.product .onsale,.woocommerce span.onsale {
 	margin: 5px 5px 0 0;
