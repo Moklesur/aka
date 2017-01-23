@@ -53,9 +53,9 @@ get_header( 'shop' ); ?>
 					?>
 				</div>
 				<?php if (get_theme_mod('shop_sidebar_enable','1') ) : ?>
-				<div class='col-md-9 col-sm-12 col-xs-12'>
+				<div class='col-md-9 col-sm-12 col-xs-12 pull-right'>
 					<?php else: ?>
-					<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="col-md-12 col-sm-12 col-xs-12 pull-left">
 						<?php endif; ?>
 						<?php if ( have_posts() ) : ?>
 

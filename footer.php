@@ -44,21 +44,22 @@
 		<div class="container">
 			<div class="row">
 				<!--------------- Footer Social ---------------->
-				<div class="col-md-6 col-sm-6 col-xs-12 site-info footer-bottom-text">
+				<div class="col-md-4 col-sm-4 col-xs-12 site-info footer-bottom-text">
 					<?php
 					if(get_theme_mod('bottom_footer_copyright_enable','1')) :
 						do_action('themetim_bottom_footer_copyright');
 					endif;
 					?>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 footer-bottom-text">
-                    <ul>
-                        <li><a href="http://demo.themetim.com/aka/">Home</a></li>
-                        <li><a href="http://demo.themetim.com/aka/shop/">Shop</a></li>
-                        <li><a href="http://demo.themetim.com/aka/product/">Product</a></li>
-                        <li><a href="http://demo.themetim.com/aka/about/">About us</a></li>
-                        <li><a href="http://demo.themetim.com/aka/contact/">Contact</a></li>
-                    </ul>
+				<div class="col-md-8 col-sm-8 col-xs-12 site-info footer-bottom-text">
+
+					<?php
+					if ( has_nav_menu( 'primary' ) ) :
+						wp_nav_menu( array('menu'              => 'primary', 'theme_location'    => 'primary', 'depth'             => 5, 'container'         => '', 'menu_id' 			=> 'primary-menu', 'container_class'   => 'collapse navbar-collapse', 'container_id'      => 'bs-example-navbar-collapse-1', 'menu_class'        => 'nav navbar-nav', 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback', 'walker'            => new wp_bootstrap_navwalker()));
+					else: echo '<p class="margin-null text-capitalize">Please select <a href="/wp-admin/nav-menus.php" class="text-muted">Primary Menu</a> </p>';
+					endif;
+					?>
+
 				</div>
 			</div>
 		</div>
