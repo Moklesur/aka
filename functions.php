@@ -48,6 +48,7 @@ if ( ! function_exists( 'themetim_setup' ) ) :
 			'footer-1' => esc_html__( 'Footer 1', 'themetim' ),
 			'footer-2' => esc_html__( 'Footer 2', 'themetim' ),
 			'footer-3' => esc_html__( 'Footer 3', 'themetim' ),
+            'footer-bottom' => esc_html__( 'Footer Bottom', 'themetim' ),
 		) );
 
 		/*

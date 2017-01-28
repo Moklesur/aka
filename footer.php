@@ -52,12 +52,8 @@
 					?>
 				</div>
 				<div class="col-md-8 col-sm-8 col-xs-12 site-info footer-bottom-text">
-
-					<?php
-					if ( has_nav_menu( 'primary' ) ) :
-						wp_nav_menu( array('menu'              => 'primary', 'theme_location'    => 'primary', 'depth'             => 5, 'container'         => '', 'menu_id' 			=> 'primary-menu', 'container_class'   => 'collapse navbar-collapse', 'container_id'      => 'bs-example-navbar-collapse-1', 'menu_class'        => 'nav navbar-nav', 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback', 'walker'            => new wp_bootstrap_navwalker()));
-					else: echo '<p class="margin-null text-capitalize">Please select <a href="/wp-admin/nav-menus.php" class="text-muted">Primary Menu</a> </p>';
-					endif;
+                    <?php
+                        do_action('themetim_bottom_footer_nav_1');
 					?>
 
 				</div>

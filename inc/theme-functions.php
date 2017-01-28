@@ -153,6 +153,21 @@ function bottom_footer_copyright(){ ?>
     <?php }
 add_action( 'themetim_bottom_footer_copyright', 'bottom_footer_copyright' );
 
+
+/**
+ * Bottom Footer Nav
+ */
+function bottom_footer_nav(){
+    ?>
+        <h3 class="margin-bottom-30"><?php echo get_theme_mod('bottom_footer_nav_heading','Footer Bottom'); ?></h3>
+    <?php
+    if ( has_nav_menu( 'footer-3' ) ) :
+        wp_nav_menu( array( 'theme_location' => 'footer-3', 'menu_class' => 'list-inline text-right text-capitalize', 'menu_id' => 'primary-menu','container' => '' ) );
+    else: echo '<p class="pull-right text-capitalize">Please select <a href="/wp-admin/nav-menus.php" class="text-muted">Footer Nav 3</a> </p>';
+    endif;
+}
+add_action( 'themetim_bottom_footer_nav', 'bottom_footer_nav' );
+
 /**
  * Social Sharing
  */

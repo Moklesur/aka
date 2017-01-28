@@ -656,7 +656,7 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	font-size: 24px;
 }
 .woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product {
-	width: 31.5%;
+	width: 31%;
 }
 .product-fix:hover .product-hover {
 	top: 33%;
@@ -1005,6 +1005,8 @@ form.wpcf7-form input, form.wpcf7-form textarea{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
 .nav>li>a:focus,.nav>li>a:hover {
     text-decoration: none;
     background-color: transparent;
@@ -1012,11 +1014,22 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 /********************************************************
     ## Miscellaneous
 ********************************************************/
-.post-edit-link{
-	padding: 6px 12px;
-	border: 1px solid;
-	display: inline-block;
-	margin-bottom: 90px;
-	margin-left: 15px;
-	margin-top: 90px;
+.post-edit-link {
+    padding: 6px 12px;
+    border: 1px solid;
+    display: inline-block;
+    margin-bottom: 90px;
+    margin-left: 15px;
+    margin-top: 90px;
+
+}
+
+
+/**************************************************
+  ##Media
+**************************************************/
+@media only screen and (max-width: 620px){
+    .woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product {
+        width: 40%;
+    }
 }
