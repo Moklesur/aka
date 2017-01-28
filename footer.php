@@ -51,7 +51,7 @@
 					endif;
 					?>
 				</div>
-				<div class="col-md-8 col-sm-8 col-xs-12 site-info footer-bottom-text">
+				<div class="col-md-8 col-sm-8 col-xs-12 site-info footer-bottom-text oooooooooo">
                     <?php
                         do_action('themetim_bottom_footer_nav_4444');
 					?>
