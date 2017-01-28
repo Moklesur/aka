@@ -102,30 +102,44 @@ p,.woocommerce-Address address {
 img {
 	max-width: 100%;
 }
-.breadcrumb{
-	background-color: transparent;
-	border-radius: 0;
-	font-size: 12px;
-	letter-spacing: 1px;
-	padding: 6px 0 5px 0;
+.breadcrumb {
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 6px 0 5px 0;
 }
 .breadcrumb-wrap{
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-	padding: 2px 0;
+    padding: 75px 0;
+    background: #28a900;
+    color:#fff;
+    text-align: center;
+}
+
+.breadcrumb-wrap a:hover{
+    color: #000;
 }
 .breadcrumb>li+li:before {
 	padding: 0 10px;
-	color: #000;
+	color: #fff;
 	content: "\f105";
 	font-family: FontAwesome;
+}
+
+.cat-description .page-header{
+    display: none;
+}
+
+.themetim-archive-product{
+    padding-top:35px;
 }
 .padding-null{
 	padding: 0;
 }
 .padding-gap-1,.parallax,.footer{
-	padding-top: 90px;
+	padding-top: 45px;
 }
+
 .padding-gap-2,.up-sells,.related,.woocommerce-tabs,.woocommerce div.product div.images, .woocommerce div.product div.summary{
 	padding-bottom:90px;
 }
@@ -426,6 +440,7 @@ header,.sticky .header-bottom{
 	position: absolute;
 	top: 60%;
 	visibility: hidden;
+    font-size: 18px;
 }
 .portfolio-url:hover span{
 	visibility: visible;
@@ -508,9 +523,21 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	padding: 5px 10px;
 	margin-bottom: 15px;
 }
+
+.entry-header{
+    display:none;
+}
+.contact-us .page-header{
+    font-size: 18px;
+}
+
 /********************************************************
     ## Blog
 ********************************************************/
+.widget-area{
+    padding-top: 65px;
+}
+
 .widget-area ul{
 	padding: 0;
 	list-style: none;
@@ -522,12 +549,12 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	padding-bottom: 0;
 }
 .widget-area section{
-	background: #f9f9f9;
-	padding: 15px;
-	margin-bottom: 30px;
+    background: none;
+    padding: 0px 15px 15px 15px;
+    margin-bottom: 40px;
 }
 .widget-area section .widget-title{
-	border-bottom: 1px solid #ddd;
+	border-bottom: none;
 	padding-bottom: 10px;
 	margin-bottom: 20px;
 }
@@ -586,9 +613,21 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	display: inline-block;
 	margin-top: 20px;
 }
-/********************************************************
-    ## Article
-********************************************************/
+
+.widget-area section .widget-title::after{
+    content: '';
+    width: 50%;;
+    border: 2px solid #28a900;
+    display: block;
+    margin-top: 15px;
+}
+
+.screen-reader-text{
+    display: none;
+}
+    /********************************************************
+        ## Article
+    ********************************************************/
 .comments img{
 	max-width: 100%;
 	border-radius: 50%;
@@ -617,7 +656,7 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	font-size: 24px;
 }
 .woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product {
-	width: 31.5%;
+	width: 31%;
 }
 .product-fix:hover .product-hover {
 	top: 33%;
@@ -817,7 +856,7 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	opacity: 1;
 }
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-	width: 33%;
+	width: 48%;
 }
 .woocommerce ul.products li.product .onsale,.woocommerce span.onsale {
 	margin: 5px 5px 0 0;
@@ -865,6 +904,10 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	margin-top: 25px;
 	border: 1px solid;
 	padding: 3px 12px;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle{
+    background-color: #28a900;
 }
 /********************************************************
     ## Quick View, Compare, Wishlist
@@ -958,15 +1001,35 @@ form.wpcf7-form input, form.wpcf7-form textarea{
     display: inline-block;
     padding:10px;
 }
+.navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
+
+.nav>li>a:focus,.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
 /********************************************************
     ## Miscellaneous
 ********************************************************/
-.post-edit-link{
-	padding: 6px 12px;
-	border: 1px solid;
-	display: inline-block;
-	margin-bottom: 90px;
-	margin-left: 15px;
-	margin-top: 90px;
+.post-edit-link {
+    padding: 6px 12px;
+    border: 1px solid;
+    display: inline-block;
+    margin-bottom: 90px;
+    margin-left: 15px;
+    margin-top: 90px;
+
+}
+
+
+/**************************************************
+  ##Media
+**************************************************/
+@media only screen and (max-width: 620px){
+    .woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product {
+        width: 40%;
+    }
 }

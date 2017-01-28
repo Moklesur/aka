@@ -44,21 +44,18 @@
 		<div class="container">
 			<div class="row">
 				<!--------------- Footer Social ---------------->
-				<div class="col-md-6 col-sm-6 col-xs-12 site-info footer-bottom-text">
+				<div class="col-md-4 col-sm-4 col-xs-12 site-info footer-bottom-text">
 					<?php
 					if(get_theme_mod('bottom_footer_copyright_enable','1')) :
 						do_action('themetim_bottom_footer_copyright');
 					endif;
 					?>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 footer-bottom-text">
-                    <ul>
-                        <li><a href="http://demo.themetim.com/aka/">Home</a></li>
-                        <li><a href="http://demo.themetim.com/aka/shop/">Shop</a></li>
-                        <li><a href="http://demo.themetim.com/aka/product/">Product</a></li>
-                        <li><a href="http://demo.themetim.com/aka/about/">About us</a></li>
-                        <li><a href="http://demo.themetim.com/aka/contact/">Contact</a></li>
-                    </ul>
+				<div class="col-md-8 col-sm-8 col-xs-12 site-info footer-bottom-text">
+                    <?php
+                        do_action('themetim_bottom_footer_nav_1');
+					?>
+
 				</div>
 			</div>
 		</div>
