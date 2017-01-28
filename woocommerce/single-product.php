@@ -35,7 +35,7 @@ get_header( 'shop' ); ?>
 				do_action( 'woocommerce_before_main_content' );
 				?>
 				<?php if (get_theme_mod('shop_sidebar_enable') ) : ?>
-				<div class='col-md-9 col-sm-12 col-xs-12'>
+				<div class='col-md-9 col-sm-12 col-xs-12 padding-gap-1'>
 					<?php else: ?>
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<?php endif; ?>
