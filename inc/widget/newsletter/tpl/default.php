@@ -16,6 +16,4 @@
 		<button type="submit" class="btn btn-primary margin-top-20"><i class="fa fa-envelope margin-right-10"></i> Subscribe</button>
 	</form>
 	<?php endif; ?>
-
-
 </div>
