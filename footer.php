@@ -53,7 +53,7 @@
 				</div>
 				<div class="col-md-8 col-sm-8 col-xs-12 site-info footer-bottom-text">
                     <?php
-                        do_action('themetim_bottom_footer_nav_1');
+                        do_action('themetim_bottom_footer_nav');
 					?>
 
 				</div>
