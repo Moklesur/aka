@@ -514,9 +514,10 @@ header,.sticky .header-bottom{
 }
 .wpcf7 .wpcf7-submit{
 	width: auto;
-	padding: 5px 15px;
+	padding: 7px 20px;
 	height: inherit;
 	letter-spacing: 1px;
+	border: 1px solid #28a900;
 }
 
 form.wpcf7-form input, form.wpcf7-form textarea{
@@ -1032,4 +1033,13 @@ form.wpcf7-form input, form.wpcf7-form textarea{
     .woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product {
         width: 40%;
     }
+}
+
+@media only screen and (max-width:768px) {
+	.col-sm-4{
+		width:100%;
+	}
+	.bottom-footer-right {
+		display: none;
+	}
 }

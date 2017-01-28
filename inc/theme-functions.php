@@ -159,7 +159,7 @@ add_action( 'themetim_bottom_footer_copyright', 'bottom_footer_copyright' );
  */
 function bottom_footer_nav(){
     ?>
-        <h3 class="margin-bottom-30"><?php echo get_theme_mod('bottom_footer_nav_heading','Footer Bottom'); ?></h3>
+        <!--<h3 class="margin-null margin-top-10"><?php echo get_theme_mod('bottom_footer_nav_heading',''); ?></h3>-->
     <?php
     if ( has_nav_menu( 'footer-3' ) ) :
         wp_nav_menu( array( 'theme_location' => 'footer-3', 'menu_class' => 'list-inline text-right text-capitalize', 'menu_id' => 'primary-menu','container' => '' ) );
