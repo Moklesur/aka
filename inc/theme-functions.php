@@ -139,6 +139,36 @@ function middle_footer_nav_3(){
     ?>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3 class="margin-bottom-30"><?php echo get_theme_mod('middle_footer_nav_heading_3','Blog'); ?></h3>
+        <?php
+        $query_latest_blog = new WP_Query( array(
+            'post_status'         => 'publish',
+            'posts_per_page'	  => 2
+        ) );
+        ?>
+        <div class="footer-blog-post row">
+            <div class="footer-blog-post-widget">
+                <?php
+                if ($query_latest_blog->have_posts()) :
+                    while ( $query_latest_blog->have_posts() ) : $query_latest_blog->the_post(); ?>
+                        <div class="col-md-8 col-sm-8 col-xs-12 margin-bottom-10">
+                            <?php the_title( sprintf( '<h5 class="entry-title text-capitalize margin-null"><a href="%s">', esc_url( get_permalink() ) ), '</a></h5>' );
+                            ?>
+                        </div>
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <div class="col-md-4 col-sm-4 col-xs-12 margin-bottom-10">
+                                <div class="entry-thumb">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-responsive" alt="" />
+                                    </a>
+                                </div> 
+                            </div>
+                        <?php endif; ?>
+                    <?php endwhile;
+                    wp_reset_postdata();
+                endif;
+                ?>
+            </div>
+        </div>
     </div>
     <?php
 }
@@ -150,7 +180,7 @@ add_action( 'themetim_middle_footer_nav_3', 'middle_footer_nav_3' );
  */
 function bottom_footer_copyright(){ ?>
     <p class="margin-null margin-top-10"><?php echo get_theme_mod('bottom_footer_copyright','© <a href="http://themetim.com/" target="_blank">ThemeTim</a>. All Rights Reserved.'); ?></p>
-    <?php }
+<?php }
 add_action( 'themetim_bottom_footer_copyright', 'bottom_footer_copyright' );
 
 
@@ -159,7 +189,7 @@ add_action( 'themetim_bottom_footer_copyright', 'bottom_footer_copyright' );
  */
 function bottom_footer_nav(){
     ?>
-        <!--<h3 class="margin-null margin-top-10"><?php echo get_theme_mod('bottom_footer_nav_heading',''); ?></h3>-->
+    <!--<h3 class="margin-null margin-top-10"><?php echo get_theme_mod('bottom_footer_nav_heading',''); ?></h3>-->
     <?php
     if ( has_nav_menu( 'footer-3' ) ) :
         wp_nav_menu( array( 'theme_location' => 'footer-3', 'menu_class' => 'list-inline text-right text-capitalize', 'menu_id' => 'primary-menu','container' => '' ) );
