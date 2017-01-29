@@ -17,6 +17,7 @@ require get_template_directory() . '/inc/widget/recent-blog-news/recent-blog-new
  * Load Theme SiteOrigin Widgets.
  */
 if ( class_exists( 'SiteOrigin_Widget' ) ) {
+    require get_template_directory() . '/inc/widget/video/video.php';
     require get_template_directory() . '/inc/widget/newsletter/newsletter.php';
     require get_template_directory() . '/inc/widget/testimonial/testimonial.php';
     require get_template_directory() . '/inc/widget/brand/brand.php';

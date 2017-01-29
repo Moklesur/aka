@@ -160,7 +160,7 @@ function middle_footer_nav_3(){
                                     <a href="<?php the_permalink(); ?>">
                                         <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-responsive" alt="" />
                                     </a>
-                                </div> 
+                                </div>
                             </div>
                         <?php endif; ?>
                     <?php endwhile;
