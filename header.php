@@ -23,10 +23,10 @@
 <div class="preloader animsition">
 <header class="header">
 	<!--------------- Header Top ---------------->
-	<section class="header-top padding-bottom-10 text-center-xs">
+	<section class="header-top text-center-xs">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12 right-logo">
 					<div class="logo pull-left">
 						<?php
 						if (get_theme_mod('site_logo') != '') : ?>
@@ -37,17 +37,17 @@
 						<?php endif ?>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12 top-right-footer">
 					<ul class="list-inline header-info margin-null text-right topheaderalign">
 						<li><i class="fa fa-map-marker"></i> 2525 Shyamoly Dhaka</li>
 					</ul>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12 top-right-footer">
 					<ul class="list-inline header-info margin-null text-right topheaderalign">
 						<li><i class="fa fa-envelope"></i> pandorapark@info.com</li>
 					</ul>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-12 top-right-footer">
 					<ul class="list-inline header-info margin-null text-right topheaderalign">
 						<li><i class="fa fa-phone"></i> + 880 1681317564 </li>
 					</ul>
