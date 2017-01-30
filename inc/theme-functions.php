@@ -89,7 +89,7 @@ function middle_footer_description(){
     ?>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3 class="margin-bottom-30"><?php echo get_theme_mod('middle_footer_text_heading','AKA'); ?></h3>
-        <p><?php echo get_theme_mod('middle_footer_text','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'); ?></p>
+        <p><?php echo get_theme_mod('middle_footer_text','Lorem Ipsum is simply dummy text of the printing and typesetting industry.'); ?></p>
     </div>
     <?php
 }

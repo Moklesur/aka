@@ -421,8 +421,6 @@ function themetim_customize_register( $wp_customize ) {
 		) )
 	);
 	/********************* Top Footer ************************/
-	
-
 	$wp_customize->add_setting( 'middle_footer_text_enable', array(
 		'default'           => '1',
 	) );
@@ -434,8 +432,18 @@ function themetim_customize_register( $wp_customize ) {
 		'settings' => 'middle_footer_text_enable'
 	) );
 
+	$wp_customize->add_setting( 'middle_footer_text_heading', array(
+		'default'           => 'AKA',
+	) );
+	$wp_customize->add_control( 'middle_footer_text_heading', array(
+		'label' => __( 'Heading', 'text_domain' ),
+		'type' => 'text',
+		'section' => 'footer_settings',
+		'settings' => 'middle_footer_text_heading',
+		'description'   => __('', 'text_domain')
+	) );
 	$wp_customize->add_setting( 'middle_footer_text', array(
-		'default'           => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+		'default'           => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 	) );
 	$wp_customize->add_control( 'middle_footer_text', array(
 		'label' => __( 'Description', 'text_domain' ),
@@ -445,6 +453,68 @@ function themetim_customize_register( $wp_customize ) {
 		'description'   => __('', 'text_domain')
 	) );
 
+	$wp_customize->add_setting( 'middle_footer_nav_heading_1', array(
+		'default'           => 'INFORMATION',
+	) );
+	$wp_customize->add_control( 'middle_footer_nav_heading_1', array(
+		'label' => __( 'Heading', 'text_domain' ),
+		'type' => 'text',
+		'section' => 'footer_settings',
+		'settings' => 'middle_footer_nav_heading_1',
+		'description'   => __('', 'text_domain')
+	) );
+	$wp_customize->add_setting( 'middle_footer_nav_1_enable', array(
+		'default'           => '1',
+	) );
+	$wp_customize->add_control( 'middle_footer_nav_1_enable', array(
+		'label' => __( 'Enable Nav 1', 'text_domain' ),
+		'type' => 'checkbox',
+		'description'   => __('', 'text_domain'),
+		'section' => 'footer_settings',
+		'settings' => 'middle_footer_nav_1_enable'
+	) );
+
+	$wp_customize->add_setting( 'middle_footer_nav_heading_2', array(
+		'default'           => 'LINKS',
+	) );
+	$wp_customize->add_control( 'middle_footer_nav_heading_2', array(
+		'label' => __( 'Heading', 'text_domain' ),
+		'type' => 'text',
+		'section' => 'footer_settings',
+		'settings' => 'middle_footer_nav_heading_2',
+		'description'   => __('', 'text_domain')
+	) );
+	$wp_customize->add_setting( 'middle_footer_nav_2_enable', array(
+		'default'           => '1',
+	) );
+	$wp_customize->add_control( 'middle_footer_nav_2_enable', array(
+		'label' => __( 'Enable Nav 2', 'text_domain' ),
+		'type' => 'checkbox',
+		'description'   => __('', 'text_domain'),
+		'section' => 'footer_settings',
+		'settings' => 'middle_footer_nav_2_enable'
+	) );
+
+	$wp_customize->add_setting( 'middle_footer_nav_heading_3', array(
+		'default'           => 'Blog',
+	) );
+	$wp_customize->add_control( 'middle_footer_nav_heading_3', array(
+		'label' => __( 'Heading', 'text_domain' ),
+		'type' => 'text',
+		'section' => 'footer_settings',
+		'settings' => 'middle_footer_nav_heading_3',
+		'description'   => __('', 'text_domain')
+	) );
+	$wp_customize->add_setting( 'middle_footer_nav_3_enable', array(
+		'default'           => '1',
+	) );
+	$wp_customize->add_control( 'middle_footer_nav_3_enable', array(
+		'label' => __( 'Enable Nav 3', 'text_domain' ),
+		'type' => 'checkbox',
+		'description'   => __('', 'text_domain'),
+		'section' => 'footer_settings',
+		'settings' => 'middle_footer_nav_3_enable'
+	) );
 
 	/**
 	 * ThemeTim Divider

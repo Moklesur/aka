@@ -30,8 +30,6 @@
                     do_action('themetim_middle_footer_nav_3');
                 endif;
                 ?>
-
-
             </div>
         </div>
     </section>
