@@ -421,7 +421,7 @@ function themetim_customize_register( $wp_customize ) {
 		) )
 	);
 	/********************* Top Footer ************************/
-	$wp_customize->add_setting( 'middle_footer_text_enable', array( 
+	$wp_customize->add_setting( 'middle_footer_text_enable', array(
 		'default'           => '1',
 	) );
 	$wp_customize->add_control( 'middle_footer_text_enable', array(
