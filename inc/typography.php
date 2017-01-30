@@ -96,7 +96,7 @@ function themetim_typography_color($color) {
     /*
      * Extra Text Color
      */
-    $text_color_1 = get_theme_mod( 'text_color_1', '#000' );
+    $text_color_1 = get_theme_mod( 'text_color_1', '#fff' );
     $text_color_2 = get_theme_mod( 'text_color_2', '#ccc' );
 
     $color .= ".text-color-1{ color: " . esc_attr($text_color_1) . "; } ";
