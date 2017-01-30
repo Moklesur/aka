@@ -33,6 +33,9 @@
         ## Max Width 767px
 ********************************************************/
 @media only screen and (max-width:767px) {
+    .woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product {
+        width: 47%;
+    }
     .primary-menu .xs-angle-down {
         margin: -10px 0 0 0;
         padding: 9px 15px;
@@ -100,7 +103,36 @@
     .footer-bottom ,.footer-bottom ul{
         text-align: center;
     }
+    .navbar-header{
+        float:right;
+    }
+    .search-cart {
+        margin-top: 20px;
+    }
+    .badge{
+        position: relative;
+        margin-right: 10px;
+    }
 
+    .bottom-footer-right {
+        display: none;
+    }
+    .right-logo{
+        position: absolute;
+    }
+    .right-logo a{
+        color:#fff;
+    }
+    .navbar-default .navbar-collapse {
+        padding-left: 40px;
+        text-align: left;
+    }
+    .top-right-footer{
+        display:none;
+    }
+    .footer-blog-post-widget .text-capitalize {
+        padding: 10px 0px;
+    }
 }
 /********************************************************
         ## Max Width 480px
