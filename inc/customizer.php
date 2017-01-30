@@ -381,15 +381,7 @@ function themetim_customize_register( $wp_customize ) {
 		'settings' => 'cart_enable'
 	) );
 
-	$wp_customize->add_setting( 'bottom_header_search', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'bottom_header_search', array(
-		'label' => __( 'Enable Search', 'text_domain' ),
-		'type' => 'checkbox',
-		'section' => 'title_tagline',
-		'settings' => 'bottom_header_search'
-	) );
+
 	/**
 	 * ThemeTim Divider
 	 */
@@ -429,29 +421,7 @@ function themetim_customize_register( $wp_customize ) {
 		) )
 	);
 	/********************* Top Footer ************************/
-	$wp_customize->add_setting( 'social_footer_enable', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'social_footer_enable', array(
-		'label' => __( 'Enable Footer Social', 'text_domain' ),
-		'type' => 'checkbox',
-		'description'   => __('## Please Go Back To Social Media Settings For Social Links ##', 'text_domain'),
-		'section' => 'footer_settings',
-		'settings' => 'social_footer_enable'
-	) );
-
-	$wp_customize->add_setting( 'newsletter_footer_enable', array(
-		'default'           => '1',
-	) );
-	$wp_customize->add_control( 'newsletter_footer_enable', array(
-		'label' => __( 'Enable Footer Newsletter', 'text_domain' ),
-		'type' => 'checkbox',
-		'description'   => __('', 'text_domain'),
-		'section' => 'footer_settings',
-		'settings' => 'newsletter_footer_enable'
-	) );
-
-
+	
 
 	$wp_customize->add_setting( 'middle_footer_text_enable', array(
 		'default'           => '1',
@@ -464,16 +434,6 @@ function themetim_customize_register( $wp_customize ) {
 		'settings' => 'middle_footer_text_enable'
 	) );
 
-	$wp_customize->add_setting( 'top_footer_newsletter_title', array(
-		'default'           => 'Newsletter',
-	) );
-	$wp_customize->add_control( 'top_footer_newsletter_title', array(
-		'label' => __( 'Heading', 'text_domain' ),
-		'type' => 'text',
-		'section' => 'footer_settings',
-		'settings' => 'top_footer_newsletter_title',
-		'description'   => __('', 'text_domain')
-	) );
 	$wp_customize->add_setting( 'middle_footer_text', array(
 		'default'           => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
 	) );
@@ -484,16 +444,7 @@ function themetim_customize_register( $wp_customize ) {
 		'settings' => 'middle_footer_text',
 		'description'   => __('', 'text_domain')
 	) );
-	$wp_customize->add_setting( 'top_footer_newsletter_url', array(
-		'default'           => 'https://www.yourmailchimpurl.com',
-	) );
-	$wp_customize->add_control( 'top_footer_newsletter_url', array(
-		'label' => __( 'Mail Chimp URL', 'text_domain' ),
-		'type' => 'textarea',
-		'section' => 'footer_settings',
-		'settings' => 'top_footer_newsletter_url',
-		'description'   => __('', 'text_domain')
-	) );
+
 
 	/**
 	 * ThemeTim Divider

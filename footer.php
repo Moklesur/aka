@@ -30,9 +30,8 @@
                     do_action('themetim_middle_footer_nav_3');
                 endif;
                 ?>
-                <!--<div class="col-md-4 col-sm-6 col-xs-12">
-                    <?php do_action('themetim_footer_newsletter'); ?>
-                </div>-->
+
+
             </div>
         </div>
     </section>
