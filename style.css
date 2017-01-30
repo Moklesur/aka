@@ -269,6 +269,18 @@ header,.sticky .header-bottom{
 .mini-cart .woocommerce-Price-amount{
 	display: none !important;
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #28a900;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #28a900;
+}
+
+.navbar-default .navbar-toggle:hover {
+	background-color: #fff;
+}
 /********************************************************
     ## Menu, Slider
 ********************************************************/
@@ -384,6 +396,7 @@ header,.sticky .header-bottom{
 }
 .brand li{
 	width: 16%;
+	padding: 0 40px;
 }
 .brand img{
 	max-width: 60px;
@@ -502,6 +515,23 @@ header,.sticky .header-bottom{
 .newsstyle .page-header{
     color:#fff;
 }
+
+.text-color h3{
+	color:#fff;
+}
+
+.modal-body {
+	padding: 0px;
+}
+
+
+.modal-content {
+	background-color: transparent;
+	-webkit-background-clip: none;
+	background-clip: none;
+	border: none;
+	border-radius: 0px;
+}
 /********************************************************
     ## Contact Form
 ********************************************************/
@@ -535,14 +565,18 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 .contact-us .page-header{
     font-size: 18px;
 }
-
+.form-control::-webkit-input-placeholder {
+	color: #fff;
+}
 /********************************************************
     ## Blog
 ********************************************************/
-.widget-area{
-    padding-top: 65px;
+.top-widget-padding{
+	padding-top:40px;
 }
-
+.top-widget-padding-2{
+	padding-top:60px;
+}
 .widget-area ul{
 	padding: 0;
 	list-style: none;
@@ -555,7 +589,7 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 }
 .widget-area section{
     background: none;
-    padding: 0px 15px 15px 15px;
+	padding: 20px 15px 15px 15px;
     margin-bottom: 40px;
 }
 .widget-area section .widget-title{
@@ -1058,7 +1092,38 @@ form.wpcf7-form input, form.wpcf7-form textarea{
 	.col-sm-4{
 		width:100%;
 	}
+
+	.navbar-header{
+		float:right;
+	}
+
+	.search-cart {
+		margin-top: 20px;
+	}
+	.badge{
+		position: relative;
+		margin-right: 10px;
+	}
+
 	.bottom-footer-right {
 		display: none;
 	}
+	.right-logo{
+		position: absolute;
+	}
+	.right-logo a{
+		color:#fff;
+	}
+
+	.navbar-default .navbar-collapse {
+		padding-left: 40px;
+		text-align: left;
+	}
+	.top-right-footer{
+		display:none;
+	}
+	.footer-blog-post-widget .text-capitalize {
+		padding: 10px 0px;
+	}
 }
+

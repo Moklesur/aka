@@ -37,7 +37,7 @@ get_header( 'shop' ); ?>
 				<?php if (get_theme_mod('shop_sidebar_enable') ) : ?>
 				<div class='col-md-9 col-sm-12 col-xs-12 padding-gap-1'>
 					<?php else: ?>
-					<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="col-md-12 col-sm-12 col-xs-12 padding-gap-1">
 						<?php endif; ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 
@@ -61,7 +61,7 @@ get_header( 'shop' ); ?>
 					 * @hooked woocommerce_get_sidebar - 10
 					 */
 					if (get_theme_mod('shop_sidebar_enable') ) :
-						?><aside id="secondary" class="widget-area col-md-3 col-sm-12 col-xs-12 padding-gap-1" role="complementary"><?php
+						?><aside id="secondary" class="widget-area col-md-3 col-sm-12 col-xs-12 top-widget-padding-2" role="complementary"><?php
 						dynamic_sidebar( 'shop-product' );
 						?></aside><?php
 					endif;
